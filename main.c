@@ -8,7 +8,7 @@
 //
 // documentation link:
 // https://github.com/DigiPen-Faculty/CProcessing/wiki
-// Copyright © 2020 DigiPen, All rights reserved.
+// Copyright Â© 2020 DigiPen, All rights reserved.
 //---------------------------------------------------------
 
 #include "cprocessing.h"
@@ -29,7 +29,7 @@ float foxHeight = 93;
 float speed = 5;
 float score = 0;
 
-float timer = 0.9f;
+float timer = 0.0f;
 int activeDice = 0;
 
 float dicePosX[MAX_DICE] = {0};
@@ -88,7 +88,7 @@ void game_update(void) {
 		dicePosY[activeDice] = 0;
 		diceLeft[activeDice] = 1;
 		activeDice++;
-		timer = 0.15f;
+		timer = 2.5f;
 	}
 
 	for (int i = 0; i < activeDice; i++) {
